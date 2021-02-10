@@ -7,6 +7,9 @@ body {
     display: grid;
     place-items: center;
 }
+main {
+  width: auto;
+}
 .red {
   background-color: red;
   width: 20px;
@@ -80,6 +83,7 @@ body {
     animation-direction: normal;
     animation-timing-function: linear;
 }
+
 @keyframes drive {
 
     0% {
@@ -116,7 +120,7 @@ body {
         left: 1030px;
         top: 90px;
         transform: rotate(90deg);
-      }
+      } 
       
       50% {
         left: 1030px;
@@ -145,7 +149,7 @@ body {
       left: 470px;
       top: 630px;
       transform: rotate(230deg);
-   }
+    }
      75% {
         left: 450px;
         top: 620px;
@@ -155,11 +159,16 @@ body {
       left: 430px;
       top: 580px;
       transform: rotate(270deg);
-   }
+    }
+    90% {
+      transform: rotate(270deg);
+      left: 430px;
+      top: 160px;
+    }
      93% {
-        transform: rotate(270deg);
-        left: 430px;
-        top: 160px;
+        transform: rotate(290deg);
+        left: 450px;
+        top: 120px;
      }
      95% {
       left: 460px;
@@ -177,6 +186,7 @@ body {
         transform: rotate(360deg);
       }
 }
+
 @keyframes red {
       0% {
         background-color: rgb(255, 0, 0);
@@ -238,6 +248,8 @@ body {
     background-color: rgba(228, 228, 186, 0.308);
   }
 }
+
+
 @keyframes police {
 
   0% {
@@ -260,11 +272,6 @@ body {
       left: 980px;
       top: 80px;
       transform: rotate(60deg);
-    }
-    31% {
-      left: 1000px;
-      top: 120px;
-      transform: rotate(70deg);
     }
     33% {
       left: 1030px;
@@ -332,3 +339,4 @@ body {
       transform: rotate(360deg);
       opacity: 1;
     }
+  }
